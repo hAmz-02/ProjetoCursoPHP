@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #303030;
+}
+
+h2 {
+    color: red;
+}
+
+
+.headContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    height: 4rem;
+    padding: 0px;
+    margin: 0px;
+}\
+
+.logoHead {
+    font-size: 40px;
+    color:white;
+    margin-left: 1rem
+}
+
+.logoHead span {
+    color: red;
+}
+
+.headContainer ul {
+    justify-content: space-around;
+    width: 30rem;
+    display:flex;
+    color: red;
+}
+
+.headContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.carrosGrid {
+    background-color: blue;
+    height: 38vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.carroCard {
+    margin-top: 0.3%;
+    background-color: red;
+    width: 40rem;
+    height: 30rem;
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    color: white;
+    align-items: baseline;
+    margin-left: 46%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
