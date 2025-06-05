@@ -22,7 +22,7 @@ $carros = [
         'modelo' => 'FERRARI 12CILINDRI 2025',
         'ano' => '2025',
         'cor' => 'vermelho',
-        'capa' => 'https://miamiimports.com.br/wp-content/uploads/2025/01/FERRARI-12CILINDRI-ROSSO-DIANTEIRA-ESQUERDA.png',
+        'capa' => 'https://preview.redd.it/dkg9t4x9coj01.jpg?width=1080&crop=smart&auto=webp&s=14d4b41f542d53ab41a15bcf5d3783c4150b0095',
         'destaque' => true
     ],
 ];
@@ -42,7 +42,7 @@ for ($x = 0; $x < count($carros); $x++) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locadora Hazus</title>
+    <title>TopGear</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
@@ -115,9 +115,8 @@ for ($x = 0; $x < count($carros); $x++) {
             <p class="copyright">@ <?= date('Y') ?> Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
 
 </body>
 

@@ -3,6 +3,11 @@
     src:url(fonts/ProRacingSlant-w1Mo9.otf);
 }
 
+@font-face {
+    font-family: myFont02;
+    src: url(fonts/RacingFonerPersonalUseOnly-Regular.otf);
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -17,20 +22,21 @@ h2 {
 
 .headContainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #252525;
     height: 6rem;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 .logoHead {
-    display: flex;
+    position: relative;
     font-family: myFont;
-    font-size: 5rem;
+    /*font-size: 5rem;*/
+    font-size: clamp(1.8rem, 10vw, 5rem);
     color:white;
-    margin-left: 1.5rem;
+    margin-left: min(1.5rem, 2%);
     margin-top: 1rem;
 
 }
@@ -40,17 +46,26 @@ h2 {
 }
 
 .headContainer ul {
+    display: flex;
     justify-content: space-around;
-    width: 30rem;
     margin-top: 1.5rem;
+    margin-left: 5rem;
     font-size: 1.5rem;
-    display:flex;
     color: red;
+    width: 120%;
+    font
 }
 
+li {
+    list-style-image: url(icons/fire.png);
+
+}
 
 .headContainer a {
     text-decoration: none;
+    color: white;
+    font-family: myFont02;
+    margin-left: 1rem;
 
 }
 
@@ -80,4 +95,9 @@ h2 {
 
 .carousel {
     margin-top: 20px;
+    width: 100%;
+}
+
+.carousel img{
+    height: 70vh;
 }
