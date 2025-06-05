@@ -12,7 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #303030;
-    background-color: red;
+    background-color: white;
 }
 
 h2 {
@@ -34,15 +34,33 @@ h2 {
     position: relative;
     font-family: myFont;
     /*font-size: 5rem;*/
-    font-size: clamp(1.8rem, 10vw, 5rem);
+    font-size: clamp(1.8rem, 10vw, 3rem);
     color:white;
     margin-left: min(1.5rem, 2%);
     margin-top: 1rem;
 
 }
 
+.headNavbar {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
 .logoHead span {
-    color: red;
+    text-transform: uppercase;
+    background: linear-gradient(to right, red, orange, yellow, orange, red, orange, yellow);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2s infinite;
+}
+
+@keyframes animate-gradient {
+    100% {
+        background-position: 100%;
+    }
 }
 
 .headContainer ul {
@@ -53,7 +71,6 @@ h2 {
     font-size: 1.5rem;
     color: red;
     width: 120%;
-    font
 }
 
 li {
@@ -84,6 +101,12 @@ li {
     height: 30rem;
 }
 
+.slideAuto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     position: fixed;
     display: flex;
@@ -94,10 +117,10 @@ li {
 }
 
 .carousel {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 3rem;
+    width: 40vw; 
 }
 
 .carousel img{
-    height: 70vh;
+    height: 40vh;
 }
