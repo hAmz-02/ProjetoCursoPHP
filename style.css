@@ -1,7 +1,13 @@
+@font-face{
+    font-family: myFont;
+    src:url(fonts/ProRacingSlant-w1Mo9.otf);
+}
+
 body {
     margin: 0px;
     padding: 0px;
     background-color: #303030;
+    background-color: red;
 }
 
 h2 {
@@ -14,15 +20,19 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: #252525;
-    height: 4rem;
+    height: 6rem;
     padding: 0px;
     margin: 0px;
-}\
+}
 
 .logoHead {
-    font-size: 40px;
+    display: flex;
+    font-family: myFont;
+    font-size: 5rem;
     color:white;
-    margin-left: 1rem
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
 }
 
 .logoHead span {
@@ -32,13 +42,16 @@ h2 {
 .headContainer ul {
     justify-content: space-around;
     width: 30rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
     display:flex;
     color: red;
 }
 
+
 .headContainer a {
     text-decoration: none;
-    color: white;
+
 }
 
 .carrosGrid {
@@ -65,7 +78,6 @@ h2 {
     margin-left: 46%;
 }
 
-img {
-    height: 100%;
-    width: 100%;
+.carousel {
+    margin-top: 20px;
 }

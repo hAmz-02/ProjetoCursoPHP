@@ -18,7 +18,7 @@ $carros = [
         'destaque' => false
     ],
     [
-        'marca' => 'ferrari'    ,
+        'marca' => 'ferrari',
         'modelo' => 'FERRARI 12CILINDRI 2025',
         'ano' => '2025',
         'cor' => 'vermelho',
@@ -30,92 +30,95 @@ $carros = [
 // Validador de destaques 
 $destaques = [];
 
-for($x = 0;$x < count($carros); $x++ ) {
-    if($carros[$x]['destaque'] == true) {
+for ($x = 0; $x < count($carros); $x++) {
+    if ($carros[$x]['destaque'] == true) {
         $destaques[] = $carros[$x];
     }
 }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locadora Hazus</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <header>
         <div class="headContainer">
-            <div class="logoHead">Locadora<span>Hazus</span></div>
-            <nav>
+            <div class="logoHead">Top<span>Gear</span></div>
+            <nav class="listaNav">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" class="linkNav">Início</a></li>
+                    <li><a href="#" class="linkNav">Galeria</a></li>
+                    <li><a href="#" class="linkNav">Sobre</a></li>
+                    <li><a href="#" class="linkNav">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="mainContainer">
-        <section class="destaques">
-            <h2 class="sectionTitle">Destaques do Momento </h2>
+        <!-- 
+        <section>
+            <h2 class="sectionTitle">Galeria</h2>
             <div class="carrosGrid">
-                <?php foreach ($destaques as $carro): ?>
-                    <?php if ($carro['destaque']): ?>
-                        <div class="carroCard">
-                            
-                            <?php if ($carro['destaque']): ?>
-                                <span class="destaqueBadge">Destaque</span>
-                            <?php endif; ?>
-                            <div class="carroCapa">
-                                <img src="<?= $carro['capa'] ?>" alt="<?= $carro['modelo'] ?>">
-                            </div>
-                            <div class="carroInfo">
-                                <h3 class="carroTitle"><?= $carro['modelo'] ?></h3>
-                                <p class="carroMarca"><?= $carro['marca'] ?></p>
-                                <div class="carroMeta">
-                                    <span class="carroAno"><?= $carro['ano'] ?></span>
-                                    <span class="carroCor"><?= $carro['cor'] ?></span>
-                                </div>
+                <?php foreach ($carros as $carro): ?>
+                    <div class="carroCard">
+                        <div class="carroCapa">
+                            <img src="<?= $carro['capa'] ?>" alt="<?= $carro['modelo'] ?>">
+                        </div>
+                        <div class="carroInfo">
+                            <h3 class="carroTitle"><?= $carro['modelo'] ?></h3>
+                            <p class="carroMarca"><?= $carro['marca'] ?></p>
+                            <div class="carroMeta">
+                                <span class="carroAno"><?= $carro['ano'] ?></span>
+                                <span class="carroCor"><?= $carro['cor'] ?></span>
                             </div>
                         </div>
-                    <?php endif; ?>
+                    </div>
                 <?php endforeach; ?>
-                
             </div>
         </section>
-
-       <section>
-        <h2 class="sectionTitle">Galeria</h2>
-        <div class="carrosGrid">
-            <?php foreach ($carros as $carro): ?>
-                <div class="carroCard">
-                    <div class="carroCapa">
-                        <img src="<?= $carro['capa'] ?>" alt="<?= $carro['modelo'] ?>">
-                    </div>
-                    <div class="carroInfo">
-                        <h3 class="carroTitle"><?= $carro['modelo'] ?></h3>
-                        <p class="carroMarca"><?= $carro['marca'] ?></p>
-                        <div class="carroMeta">
-                            <span class="carroAno"><?= $carro['ano'] ?></span>
-                            <span class="carroCor"><?= $carro['cor'] ?></span>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-       </section>
+                -->
     </main>
 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <?php foreach ($destaques as $carro) : ?>
+                <?php if ($carro['destaque']): ?>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="<?= $carro['capa'] ?>" class="d-block w-100" alt="<?= $carro['modelo'] ?>">
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h2>kajdlçjafklçjfl</h2>
     <footer>
         <div class="container footerContent">
             <div class="footerLogo">LocadoraHazus</div>
             <p class="copyright">@ <?= date('Y') ?> Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
