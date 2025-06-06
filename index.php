@@ -6,7 +6,7 @@ $carros = [
         'modelo' => 'm5',
         'ano' => '2024',
         'cor' => 'preto',
-        'capa' => 'https://www.supercarclub.pl/wp-content/uploads/2022/05/BMW-M5-scaled.jpg',
+        'capa' => 'https://w.wallhaven.cc/full/eo/wallhaven-eovgql.jpg',
         'destaque' => true
     ],
     [
@@ -22,7 +22,7 @@ $carros = [
         'modelo' => 'FERRARI 12CILINDRI 2025',
         'ano' => '2025',
         'cor' => 'vermelho',
-        'capa' => 'https://preview.redd.it/dkg9t4x9coj01.jpg?width=1080&crop=smart&auto=webp&s=14d4b41f542d53ab41a15bcf5d3783c4150b0095',
+        'capa' => '',
         'destaque' => true
     ],
 ];
@@ -68,11 +68,6 @@ for ($x = 0; $x < count($carros); $x++) {
     </header>
     <main class="mainContainer">
         <!-- Carousel with autoplay derived from bootstrap -->
-
-        <div class="content">
-            <h2>O que somos?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus tempora veritatis saepe ipsam, porro necessitatibus rem sit iusto sint, corrupti officia aspernatur sapiente vitae ipsum voluptate. Consequatur dolores molestiae suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim fuga quisquam, quod commodi doloribus ea perspiciatis aliquam dicta laborum autem debitis libero nesciunt. Aliquam exercitationem laboriosam delectus illum accusamus architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium vel, maxime minus fugiat possimus doloribus? Nemo magnam blanditiis voluptatem ratione cupiditate voluptates hic nobis! Earum magni distinctio praesentium deleniti? </p>
-        </div>
 
         <div class="slideAuto">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">

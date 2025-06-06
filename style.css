@@ -17,7 +17,6 @@ body {
 
 main {
     height: 70vw;
-    padding: 2rem;
     background: linear-gradient(black 10%, #808080 70%, #C0C0C0);
 }
 
@@ -29,7 +28,7 @@ h2 {
 .headContainer {
     display: flex;
     align-items: center;
-    background-color: #252525;
+    background-color: #151515;
     height: 6rem;
     width: 100%;
     padding: 0px;
@@ -129,9 +128,11 @@ li {
 
 .carousel {
     margin-top: 3rem;
-    width: 40vw; 
+    width: 100%; 
 }
 
 .carousel img{
-    height: 40vh;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
 }
