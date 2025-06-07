@@ -2,31 +2,32 @@
 // Iventário dos carros
 $carros = [
     [
-        'marca' => 'bmw',
-        'modelo' => 'm5',
-        'ano' => '2024',
+        'marca' => 'BMW',
+        'modelo' => 'BMW M4 F80',
+        'ano' => '2018',
         'cor' => 'preto',
         'capa' => 'https://w.wallhaven.cc/full/eo/wallhaven-eovgql.jpg',
         'destaque' => true
     ],
     [
-        'marca' => 'mercedes',
-        'modelo' => 'Mercedes-benz Amg Gt 63 2025',
+        'marca' => 'Porsche',
+        'modelo' => 'Porsche 911 Turbo S',
         'ano' => '2025',
         'cor' => 'prata',
-        'capa' => 'https://www.planetcarsz.com/img/carros/2024/09/mercedes-amg-gt-63-pro-4matic-motorsport-collectors-edition-2025-001-20240918161524-1280x925.jpg',
-        'destaque' => false
+        'capa' => 'https://images.unsplash.com/photo-1679478878845-af7294f28b27?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'destaque' => true
     ],
     [
-        'marca' => 'ferrari',
+        'marca' => 'Ferrari',
         'modelo' => 'FERRARI 12CILINDRI 2025',
         'ano' => '2025',
         'cor' => 'vermelho',
-        'capa' => '',
+        'capa' => 'images/cars/ferrari12cilindri.jpg',
         'destaque' => true
     ],
 ];
 
+$x = true;
 // Validador de destaques 
 $destaques = [];
 
@@ -73,8 +74,13 @@ for ($x = 0; $x < count($carros); $x++) {
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php foreach ($destaques as $carro): ?>
-                        <?php if ($carro['destaque'] == true): ?>
+                        <?php if($carro['destaque'] == true && $x == true): ?>
                             <div class="carousel-item active">
+                                <img src="<?= $carro['capa'] ?>" class="d-block w-100" alt="<?= $carro['modelo'] ?>">
+                            </div>
+                            <?= $x = false; ?>
+                        <?php elseif($carro['destaque'] == true && $x == false): ?>
+                            <div class="carousel-item">
                                 <img src="<?= $carro['capa'] ?>" class="d-block w-100" alt="<?= $carro['modelo'] ?>">
                             </div>
                         <?php endif; ?>

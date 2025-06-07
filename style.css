@@ -113,21 +113,22 @@ li {
 }
 
 .footerAlign {
-    width: 100% ;
+    background-color: #101010;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 2vw;
+    bottom: 0;
 }
 
-.container {
-    position: fixed;
-    justify-content: center;
-    background-color: blue;
+.footerContent {
     display: flex;
-    bottom: 0;
-    color: white;
     align-items: baseline;
+    justify-content: center;
+    margin-top: 0.5%;
 }
 
 .carousel {
-    margin-top: 3rem;
     width: 100%; 
 }
 
