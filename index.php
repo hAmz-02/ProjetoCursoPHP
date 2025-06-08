@@ -44,7 +44,8 @@ for ($x = 0; $x < count($carros); $x++) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopGear</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
@@ -74,12 +75,12 @@ for ($x = 0; $x < count($carros); $x++) {
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php foreach ($destaques as $carro): ?>
-                        <?php if($carro['destaque'] == true && $x == true): ?>
+                        <?php if ($carro['destaque'] == true && $x == true): ?>
                             <div class="carousel-item active">
                                 <img src="<?= $carro['capa'] ?>" class="d-block w-100" alt="<?= $carro['modelo'] ?>">
                             </div>
                             <?= $x = false; ?>
-                        <?php elseif($carro['destaque'] == true && $x == false): ?>
+                        <?php elseif ($carro['destaque'] == true && $x == false): ?>
                             <div class="carousel-item">
                                 <img src="<?= $carro['capa'] ?>" class="d-block w-100" alt="<?= $carro['modelo'] ?>">
                             </div>
@@ -98,8 +99,32 @@ for ($x = 0; $x < count($carros); $x++) {
                 </button>
             </div>
         </div>
-        
-        <!-- 
+        <br>
+        <div class="tableCard">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="https://w.wallhaven.cc/full/eo/wallhaven-eovgql.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="images/cars/ferrari12cilindri.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+            
+            
+        </div>
+            <!-- 
         <section>
             <h2 class="sectionTitle">Galeria</h2>
             <div class="carrosGrid">
@@ -122,17 +147,18 @@ for ($x = 0; $x < count($carros); $x++) {
         </section>
                 -->
     </main>
-
     <footer>
         <div class="footerAlign">
             <div class="container footerContent">
-            <div class="footerLogo">TopGear</div>
-            <p class="copyright">@ <?= date('Y') ?> Todos os direitos reservados</p>
+                <div class="footerLogo">TopGear</div>
+                <p class="copyright">@ <?= date('Y') ?> Todos os direitos reservados</p>
+            </div>
         </div>
-        </div>
-      
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
 
 </body>
