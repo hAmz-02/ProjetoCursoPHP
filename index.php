@@ -140,6 +140,7 @@ for ($x = 0; $x < count($carros); $x++) {
                         <li><a href="#about" class="linkNav">Sobre</a></li>
                         <li><a href="#iventario" class="linkNav">Galeria</a></li>
                         <li><a href="#" class="linkNav">Contato</a></li>
+                        <li><a href="login.php" class="linkNav">Login</a></li>
                     </ul>
                 </nav>
             </div>

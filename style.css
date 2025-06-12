@@ -83,8 +83,7 @@ h2 {
 }
 
 li {
-    list-style-image: url(icons/fire.png);
-
+    list-style: none;
 }
 
 .headContainer a {
@@ -215,4 +214,49 @@ li {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: red;
     -webkit-text-stroke : 1px #000000;
+}
+
+/* Login Page */
+
+.loginTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginPage {
+    color: red;
+    font-size: 10rem;
+    font-family: myFont;
+    -webkit-text-stroke: 2px white;
+}
+
+.aboutForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutForm p {
+    color: white;
+}
+
+.form-control {
+    width: 100%;
+}
+
+form {
+    color: white;
+}
+
+.aboutCheckBox {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutCheck {
+    color: white;
+    justify-content: center;
 }
